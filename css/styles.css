@@ -1,0 +1,193 @@
+:root{
+/* Fonts */
+--secondary-font: raleway, sans-serif;
+/* Font-size */
+--primary-txt-size: 14px;
+--main-txt-size: 16px;
+/* Font-weight */
+--title-txt-weight: 900;
+--heading-txt-weight: 700;
+--secondary-txt-weight: 500;
+/* Text color */
+--primary-txt-cl: #212121;
+--secondary-txt-cl: #757575;
+--logo-txt-cl: #000000;
+--accent-txt-cl: #2196F3;
+--light-txt-cl: #FFFFFF;
+--grey-txt-cl-60: rgba(255, 255, 255, 0.6);
+/* Background color */
+--primary-white-cl: #FFFFFF;
+--secondary-bg-cl: #F5F4FA;
+--accent-bg-cl: #2196F3;
+--active-bg-cl: #188CE8; 
+--dark-bg-cl: #2F303A;
+--light-bg-cl: #F5F5F5;
+}
+/* Body */
+body{
+    font-size: var(--primary-txt-size);
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.03em; 
+    color: var(--primary-txt-cl);
+    background-color: var(--primary-white-color);
+}
+.link:hover,
+.link:focus {
+    color: var(--accent-txt-cl);
+}
+/* reset */
+.link,
+.projects-link{
+    text-decoration: none;
+    color: currentColor;
+}
+.list{
+    list-style: none;
+}
+/* Header */
+.header{
+    font-size: var(--primary-txt-size);
+    font-weight: var(--secondary-txt-weight);
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+}
+.logo{
+    font-family: var(--secondary-font);
+    font-weight: var(--heading-txt-weight);
+    font-size: 26px;
+    line-height: calc(31 / 26);
+    color: var(--logo-txt-cl);
+}
+.logo-txt{
+    color: var(--accent-txt-cl);
+}
+.header-item{
+    color: var(--secondary-txt-cl);  
+}
+.active{
+    color: var(--accent-txt-cl);
+}
+/* Hero */
+.hero{
+    background-color: var(--dark-bg-cl);
+    color: var(--light-txt-cl);
+}
+.hero-title{
+    font-weight: var(--title-txt-weight);
+    font-size: 44px;
+    line-height: calc(60 / 44);
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+.hero-btn{
+    font-family: inherit;
+    font-weight: var(--heading-txt-weight);
+    font-size: var(--main-txt-size);
+    line-height: calc(30 / 16);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: var(--light-txt-cl);
+    background-color: var(--accent-bg-cl);
+    cursor: pointer;
+}
+.hero-btn:hover,
+.hero-btn:focus{
+    background-color: var(--active-bg-cl);
+}
+/* Hidden title */
+.visually-hidden{
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+/* Peculiarities */
+.peculiarities-subtitle{
+    font-size: var(--primary-txt-size);
+    font-weight: var(--heading-txt-weight);
+    line-height: calc(16 / 14);
+    text-transform: uppercase;
+}
+.peculiarities-txt{
+    line-height: calc(24 / 14);
+    color: var(--secondary-txt-cl);
+}
+/* Heading */
+.heading{
+    font-weight: var(--heading-txt-weight);
+    font-size: 36px;
+    line-height: var(42 / 36);
+}
+/* Tech skills */
+.skills-groupe{
+    text-align: center;
+}
+/* Team */
+.team-group{
+    background-color: var(--secondary-bg-cl);
+    text-align: center;
+    font-size: var(--main-txt-size);
+    line-height: calc(19 / 16);
+}
+.team-item{
+    background-color: var(--primary-white-cl);
+}
+.team-title{
+    font-weight: var(--secondary-txt-weight);
+}
+.team-txt{
+    color: var(--secondary-txt-cl);
+}
+/* Footer */
+.footer{
+    background-color: var(--dark-bg-cl);
+}
+.footer-logo-txt{
+    color: var(--light-txt-cl);
+}
+.contacts{
+    font-size: var(--primary-txt-size);
+    font-style: normal;
+    line-height: calc(24 / 14);
+    color: var(--light-txt-cl);
+}
+.contacts-item{
+    color: var(--grey-txt-cl-60);
+}
+/* Portfolio */
+.projects-btn{
+    font-family: inherit;
+    font-weight: 500;
+    font-size: var(--main-txt-size);
+    line-height: calc(26 / 16);
+    text-align: center;
+    background-color: var(--secondary-bg-cl);
+    cursor: pointer;
+}
+.projects-btn:hover,
+.projects-btn:focus{
+    background-color: var(--accent-bg-cl);
+    color: var(--light-txt-cl);
+}
+.projects-subtitle{
+    font-weight: var(--heading-txt-weight);
+    font-size: 18px;
+    line-height: calc(36 / 18);
+    letter-spacing: 0.06em;
+}
+.projects-txt{
+    font-size: var(--main-txt-size);
+    line-height: calc(30 / 16);
+    color: var(--secondary-txt-cl);
+}

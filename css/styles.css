@@ -60,7 +60,7 @@ body{
     margin-left: auto;
     margin-right: auto;
 
-outline: 2px solid red;
+/* outline: 2px solid red; */
 }
 h1, h2, h3, h4, h5, h6, p, ul{
     margin: 0;
@@ -290,21 +290,24 @@ img{
     background-color: var(--accent-bg-cl);
     color: var(--light-txt-cl);
 }
-.projects-conteiner{
+.projects-list{  
     display: flex;
-    margin: 0;
-    padding: 0;
-    /* flex-wrap: wrap;
-    flex-basis: calc(100% / 3); */
+    flex-wrap: wrap;
+    gap: 30px;
 }
-.projects-link{
-    display: block;
+.card-txt{
+    padding: 19px 23px;
+    border-top: 1px solid transparent;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
 }
 .projects-subtitle{
     font-weight: var(--heading-txt-weight);
     font-size: 18px;
     line-height: calc(36 / 18);
     letter-spacing: 0.06em;
+    margin-bottom: 4px;
 }
 .projects-txt{
     font-size: var(--main-txt-size);
